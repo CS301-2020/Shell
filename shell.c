@@ -27,8 +27,7 @@ char *built_in_str[] = {
     "ls",
     "cat",
     "cp",
-    "help",
-    "exit"
+    "help"
 };
 
 
@@ -127,10 +126,10 @@ int _cd(char **input_command){
 
 
 
-/*Implement basic exit*/
-void _exit(){
-    return 0;
-}
+// /*Implement basic exit*/
+// void _exit(){
+//     return 0;
+// }
 
 
 
@@ -350,12 +349,10 @@ int execute_builtin_commands(char **input_command,char **history,int count)
         _help();
     }
 
-    if (strcmp(input_command[0], built_in_str[9]) == 0) {  // exit
-        _exit();
-    }
+    // if (strcmp(input_command[0], built_in_str[9]) == 0) {  // exit
+    //     _exit();
+    // }
 }
-
-
 
 
 
